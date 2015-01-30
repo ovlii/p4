@@ -15,6 +15,7 @@ the following :
 3. Used Routes,Views, Models, Controllers, artisan migrate, db seeding
 
 ## Demo
+<http://www.screencast.com/t/uQB7Qo2NA>
 
 ## Details for teaching team
 Login information for
