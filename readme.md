@@ -1,8 +1,31 @@
-# Foobooks Fall 2014
+# Project 4  - Ovlii's List
 
-Example application built during the Fall 2014 semester of [Dynamic Web Applications](http://dwa15.com).
+## Live URL
+<http://p4.ovlii.me>
 
-[Plan of action...](https://docs.google.com/a/susanbuck.net/document/d/1m-pT1zqnEjWtaWq74pjYDkpwBnEyMsoEpna28pjTSpE/edit)
+## Description
+This project is an application to list free advertisements for
+sale of items and/or provide services. Users can search the listings
+and contact the users directly to buy the items and/or discuss on the
+service rates
+the following :
 
-View at <http://foobooks.dwa15-practice.biz/>
+1. Laravel Framework
+2. Bootstrap templates
+3. Used Routes,Views, Models, Controllers, artisan migrate, db seeding
 
+## Demo
+
+## Details for teaching team
+Login information for 
+1. Admin functionality
+username : admin15@gmail.com
+password : admin1234
+
+2. User Functionality
+username : user15@gmail.com
+password : user1234
+
+## Outside code
+I have used foobooks examples by Susan from cscie-15 course and other examples. 
+In addition, I have used Bootstrap templates. 

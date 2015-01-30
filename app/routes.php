@@ -9,6 +9,9 @@ Route::get('/classes', function() {
 /* Index */
 Route::get('/', 'IndexController@getIndex');
 
+Route::get('/faq','FAQController@getIndex');
+
+Route::get('/about','AboutController@getIndex');
 
 /** User Routes */
 
@@ -20,6 +23,8 @@ Route::post('/login', 'UserController@postLogin' );
 
 Route::get('/user/edit/{id}', 'UserController@getEdit');
 Route::post('/user/edit', 'UserController@postEdit');
+
+Route::get('/users','UserController@Index');
 
 Route::get('/logout', 'UserController@getLogout' );
 

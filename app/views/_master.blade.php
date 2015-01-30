@@ -63,12 +63,9 @@
                        <a href='/listing/create'>+ Add Listing</a>
                     </li>
                     <li>
-                        <a href="/contact">Contact</a>
+                        <a href="/faq">FAQ</a>
                     </li>
                     @if(Auth::check() )
-                    <li>
-                        <a href="/account">My Account</a>
-                    </li>
                     @if( Auth::user()->user_role == 'Admin' )
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin<b class="caret"></b></a>
@@ -81,9 +78,6 @@
                             </li>
                             <li>
                                 <a href="/category">Categories</a>
-                            </li>
-                            <li>
-                                <a href="/faq">FAQ</a>
                             </li>
                         </ul>
                     </li>

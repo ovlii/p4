@@ -39,13 +39,4 @@
 
 	{{ Form::close() }}
 
-	<div>
-		{{---- DELETE -----}}
-		{{ Form::open(array('url' => '/listing/delete')) }}
-			{{ Form::hidden('id',$listing['id']); }}
-			<button onClick='parentNode.submit();return false;'>Delete</button>
-		{{ Form::close() }}
-	</div>
-
-
 @stop

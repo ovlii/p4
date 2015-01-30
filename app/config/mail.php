@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'dwa15practice@gmail.com', 'name' => 'Foobooks'),
+	'from' => array('address' => 'ovlii@gmail.com', 'name' => 'Ovliis'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => 'postmaster@sandbox4783f918183d40879aca024f1c04432e.mailgun.org',
+	'username' => 'postmaster@sandbox0435302db4fb42aea5e9f208bd427035.mailgun.org',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => 'a3b1e91f3d2d5d16bf6969115106db37',
+	'password' => '94a03ffc0b8972123118c634450a1147 ',
 
 	/*
 	|--------------------------------------------------------------------------

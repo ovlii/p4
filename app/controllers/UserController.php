@@ -17,6 +17,18 @@ class UserController extends BaseController {
 
     }
 
+    /**
+	* Show the users
+	* @return View
+	*/
+    
+	public function index() {
+
+		$users = User::all();
+		return View::make('user_index')->with('users',$users);
+
+	}
+    
 
     /**
 	* Show the new user signup form
@@ -53,7 +65,10 @@ class UserController extends BaseController {
 		}
 
 		$user = new User;
-		$user->email    = Input::get('email');
+		$user->first_name = Input::get('first_name');
+		$user->last_name  = Input::get('last_name');
+		$user->email      = Input::get('email');
+		$user->user_role  = Input::get('user_role');
 		$user->password = Hash::make(Input::get('password'));
 
 		try {

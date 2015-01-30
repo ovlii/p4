@@ -20,10 +20,4 @@
 
 	{{ Form::close() }}
 
-
-	{{---- DELETE -----}}
-	{{ Form::open(['method' => 'DELETE', 'action' => ['CategoryController@destroy', $category->id]]) }}
-		<a href='javascript:void(0)' onClick='parentNode.submit();return false;'>Delete</a>
-	{{ Form::close() }}
-
 @stop

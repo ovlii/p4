@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://foobooks.dwa15-practice.biz',
+	'url' => 'http://p4.ovlii.me',
 
 	/*
 	|--------------------------------------------------------------------------
