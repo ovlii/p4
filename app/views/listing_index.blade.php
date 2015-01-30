@@ -25,6 +25,13 @@
                     <div class="panel-body">
                         <p>{{$listing['description']}}</p>
                         
+                        <p>{{$listing['full_name']}}</p>
+
+                        <p>{{$listing['email_address']}}</p>
+
+                        <p>{{$listing['phone_number']}}</p>
+                        
+                        <p>{{$listing['price']}}</p>
                         <p>
                             @foreach($listing['categories'] as $category)
                                 <span class='category'>{{{ $category->name }}}</span>

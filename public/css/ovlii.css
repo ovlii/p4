@@ -99,6 +99,7 @@ footer {
 }
 
 .category {
-	color:grey;
+	background-color:lightgrey;
 	font-family:consolas;
+    font-style:italic;
 }

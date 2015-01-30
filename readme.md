@@ -28,5 +28,15 @@ username : user15@gmail.com
 password : user1234
 
 ## Outside code
-I have used foobooks examples by Susan from cscie-15 course and other examples. 
+I have used foobooks examples by Susan from cscie-15 course and other examples covered
+in the class.
 In addition, I have used Bootstrap templates. 
+Laravel Packages have been used and they are
+
+1. "laravel/framework": "4.2.*",
+2.	"paste/pre": "dev-master",
+3.	"fzaninotto/faker": "1.5.*@dev",
+4.	"xi/randomstring": "dev-master",
+5.	"badcow/lorem-ipsum": "dev-master",
+6.	"barryvdh/laravel-debugbar": "1.7.*@dev",
+7.	"laracasts/utilities": "~1.0"
