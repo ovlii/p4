@@ -17,7 +17,8 @@ the following :
 ## Demo
 
 ## Details for teaching team
-Login information for 
+Login information for
+
 1. Admin functionality
 username : admin15@gmail.com
 password : admin1234
