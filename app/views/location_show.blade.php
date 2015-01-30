@@ -7,8 +7,10 @@
 
 
 @section('content')
-
-	<h2>Location: {{ $location->name }}</h2>
+<div class="container">
+<div class="row">
+    <div class="col-md-8">
+        <h3>Location: {{ $location->name }}</h3>
 
 	<div>
 	Created: {{ $location->created_at }}
@@ -20,5 +22,8 @@
 
 	{{---- Edit ----}}
 	<a href='/location/{{ $location->id }}/edit'>Edit</a>
+    </div>
+</div>
+</div>
 
 @stop

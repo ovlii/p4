@@ -6,18 +6,26 @@
 
 
 @section('content')
+<div class="container">
+<div class="row">
+    <div class="col-md-8">
 
-	{{ Form::model($category, ['method' => 'put', 'action' => ['Category`Controller@update', $category->id]]) }}
+	{{ Form::model($category, ['method' => 'put', 'action' => ['CategoryController@update', $category->id]]) }}
 
-		<h2>Update: {{ $category->name }}</h2>
+		<h3>Update: {{ $category->name }}</h3>
 
 		<div class='form-group'>
-			{{ Form::label('name', 'Category Name') }}
-			{{ Form::text('name') }}
+			{{ Form::label('name', 'Category Name') }}<br/>
+			{{ Form::text('name') }}<br/>
 		</div>
 
-		{{ Form::submit('Update') }}
+		{{ Form::submit('Update', ['class' => 'btn btn-large btn-primary openbutton'])}}<br/>
 
 	{{ Form::close() }}
+    </div>
+
+</div>
+<br/>
+</div>
 
 @stop

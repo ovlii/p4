@@ -1,5 +1,4 @@
 <section>
-	<img class='cover' src='{{ $book['cover'] }}'>
 
 	<h2>{{ $listing['title'] }}</h2>
 

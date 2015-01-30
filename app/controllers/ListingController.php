@@ -48,7 +48,7 @@ class ListingController extends \BaseController {
 
 
 	/**
-	* Display all books
+	* Display all Listings
 	* @return View
 	*/
 	public function getIndex() {
@@ -181,7 +181,7 @@ class ListingController extends \BaseController {
 	        return Redirect::to('/listing/')->with('flash_message', 'Could not delete listing - not found.');
 	    }
 
-	    Book::destroy(Input::get('id'));
+	    Listing::destroy(Input::get('id'));
 
 	    return Redirect::to('/listing/')->with('flash_message', 'Listing deleted.');
 
@@ -206,7 +206,7 @@ class ListingController extends \BaseController {
 
 	        # If the request is for JSON, just send the books back as JSON
 	        if($format == 'json') {
-		        return Response::json($books);
+		        return Response::json($listings);
 	        }
 	        # Otherwise, loop through the results building the HTML View we'll return
 	        elseif($format == 'html') {

@@ -9,9 +9,10 @@
 @stop
 
 @section('content')
-
-	<h1>Edit</h1>
-	<h2>{{{ $listing['title'] }}}</h2>
+<div class="container">
+<div class="row">
+    <div class="col-md-8">
+        <h3>Edit {{{ $listing['title'] }}}</h3>
 
 	{{---- EDIT -----}}
 	{{ Form::open(array('url' => '/listing/edit')) }}
@@ -19,24 +20,28 @@
 		{{ Form::hidden('id',$listing['id']); }}
 
 		<div class='form-group'>
-			{{ Form::label('title','Title') }}
-			{{ Form::text('title',$listing['title']); }}
+			{{ Form::label('title','Title') }}<br/>
+			{{ Form::text('title',$listing['title']); }}<br/>
 		</div>
 
 		<div class='form-group'>
-			{{ Form::label('location_id', 'Location') }}
-			{{ Form::select('location_id', $locations, $listing->location_id); }}
+			{{ Form::label('location_id', 'Location') }}<br/>
+			{{ Form::select('location_id', $locations, $listing->location_id); }}<br/>
 		</div>
 
 		<div class='form-group'>
 			@foreach($categories as $id => $category)
 				{{ Form::checkbox('categories[]', $id, $listing->categories->contains($id)); }} {{ $category }}
 				&nbsp;&nbsp;&nbsp;
-			@endforeach
+			@endforeach<br/>
 		</div>
 
-		{{ Form::submit('Save'); }}
+		{{ Form::submit('Save', ['class' => 'btn btn-large btn-primary openbutton'])}}<br/>
 
 	{{ Form::close() }}
+    </div>
+
+</div>
+</div>
 
 @stop

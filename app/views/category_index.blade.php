@@ -7,10 +7,10 @@
 
 
 @section('content')
-
-	<h2>Categories</h2>
-
-
+<div class="container">
+<div class="row">
+    <div class="col-md-8">
+        <h3>Categories</h3>
 	<a href='/category/create'>+ Add a new category</a>
 
 	<br><br>
@@ -22,5 +22,9 @@
 		</div>
 
 	@endforeach
+    </div>
 
+</div>
+<br/>
+</div>
 @stop

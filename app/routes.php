@@ -13,6 +13,8 @@ Route::get('/faq','FAQController@getIndex');
 
 Route::get('/about','AboutController@getIndex');
 
+Route::get('/search','SearchController@getIndex');
+
 /** User Routes */
 
 Route::get('/signup','UserController@getSignup' );

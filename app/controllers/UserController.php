@@ -59,7 +59,6 @@ class UserController extends BaseController {
 		if($validator->fails()) {
 
 			return Redirect::to('/signup')
-				->with('flash_message', 'Sign up failed; please fix the errors listed below.')
 				->withInput()
 				->withErrors($validator);
 		}
@@ -76,7 +75,6 @@ class UserController extends BaseController {
 		}
 		catch (Exception $e) {
 			return Redirect::to('/signup')
-				->with('flash_message', 'Sign up failed; please try again.')
 				->withInput();
 		}
 
@@ -85,7 +83,7 @@ class UserController extends BaseController {
 
 		$user->sendWelcomeEmail();
 
-		return Redirect::to('/')->with('flash_message', 'Welcome to Foobooks!');
+		return Redirect::to('/')->with('flash_message', 'Welcome to Ovliis!');
 
 	}
 
@@ -113,7 +111,6 @@ class UserController extends BaseController {
 		}
 		else {
 			return Redirect::to('/login')
-				->with('flash_message', 'Log in failed; please try again.')
 				->withInput();
 		}
 

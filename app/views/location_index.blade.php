@@ -7,10 +7,10 @@
 
 
 @section('content')
-
-	<h2>Locations</h2>
-
-
+<div class="container">
+<div class="row">
+    <div class="col-md-8">
+        <h3>Locations</h3>
 	<a href='/location/create'>+ Add a new location</a>
 
 	<br><br>
@@ -22,5 +22,8 @@
 		</div>
 
 	@endforeach
+    </div>
+</div>
+</div>
 
 @stop

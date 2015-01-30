@@ -10,7 +10,8 @@
 
 
 @section('content')
-    <br/><br/>
+<br/><br/>
+<div class="container">
     <!-- Content Row -->
     <div class="row">
         <div class="col-lg-12">
@@ -96,4 +97,5 @@ functionality of authentication, all users intending to create a listing need to
         <!-- /.col-lg-12 -->
     </div>
     <!-- /.row -->
+</div>
 @stop

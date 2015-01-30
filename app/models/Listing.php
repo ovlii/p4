@@ -55,7 +55,7 @@ class Listing extends Eloquent {
         if($query) {
 
             # Eager load tags and author
-            $books = Book::with('categories','location')
+            $listings = Listing::with('categories','location')
             ->whereHas('location', function($q) use($query) {
                 $q->where('name', 'LIKE', "%$query%");
             })

@@ -7,8 +7,10 @@
 
 
 @section('content')
-
-	<h2>Category: {{ $category->name }}</h2>
+<div class="container">
+<div class="row">
+    <div class="col-md-8">
+        <h3>Category: {{ $category->name }}</h3>
 
 	<div>
 	Created: {{ $category->created_at }}
@@ -19,6 +21,10 @@
 	</div>
 
 	{{---- Edit ----}}
-	<a href='/tag/{{ $category->id }}/edit'>Edit</a>
+	<a href='/category/{{ $category->id }}/edit'>Edit</a>
+    </div>
 
+</div>
+<br/>
+</div>
 @stop

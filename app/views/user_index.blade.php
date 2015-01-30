@@ -7,11 +7,10 @@
 
 
 @section('content')
-
-	<h2>Users</h2>
-
-	<br><br>
-
+<div class="container">
+<div class="row">
+    <div class="col-md-8">
+        <h3>Users</h3>
 	@foreach($users as $user)
 
 		<div>
@@ -19,5 +18,8 @@
 		</div>
 
 	@endforeach
+    </div>
+</div>
+</div>
 
 @stop

@@ -6,9 +6,10 @@
 
 
 @section('content')
-
-	<h1>Create a Category</h1>
-
+<div class="container">
+<div class="row">
+    <div class="col-md-8">
+        <h3>Create Category</h3>
 	{{ Form::open(array('action' => 'CategoryController@store')) }}
 
 		<div>
@@ -17,8 +18,11 @@
 		</div>
 
 		<br><br>
-		{{ Form::submit('Add Category') }}
-
+		{{ Form::submit('Add Category', ['class' => 'btn btn-large btn-primary openbutton'])}}<br/>
 	{{ Form::close() }}
+    </div>
 
+</div>
+<br/>
+</div>
 @stop

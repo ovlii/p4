@@ -10,7 +10,7 @@
 
 
 @section('content')
-    <br/><br/>
+<div class="container">
        <!-- Team Members -->
         <div class="row">
             <div class="col-lg-12">
@@ -29,4 +29,5 @@
             </div>
         </div>
         <!-- /.row -->
+</div>
 @stop

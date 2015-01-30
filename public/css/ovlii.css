@@ -93,3 +93,12 @@ footer {
         height: 70%;
     }
 }
+
+.error {
+    color:red;
+}
+
+.category {
+	color:grey;
+	font-family:consolas;
+}
